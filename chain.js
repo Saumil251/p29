@@ -19,6 +19,9 @@ class Chain{
             strokeWeight(4);
             stroke("white")
             line(pointA.x, pointA.y, pointB.x, pointB.y);
+
+
+           
         }
         
     }
