@@ -63,4 +63,9 @@ function mouseReleased(){
     
     chain1.fly();
 }
-  
+  function keyPressed(){
+if(keyCode==32){
+  chain1.attach(this.polygon1.body)
+}
+
+  }

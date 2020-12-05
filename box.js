@@ -12,14 +12,15 @@ class Box{
 this.visibility=255
     }
     display(){
-       var pos=this.body.position
-        push()
-        rectMode(CENTER)
-        fill("yellow")
-        translate(pos.x,pos.y)
-        rect(0,0,this.width,this.height,50,50)
+       
             if(this.body.speed<3){
-              super.display()
+                var pos=this.body.position
+                push()
+                rectMode(CENTER)
+                fill("yellow")
+                translate(pos.x,pos.y)
+                rect(0,0,this.width,this.height,50,50)
+                pop()
             }
             else{
               
@@ -31,6 +32,5 @@ this.visibility=255
             }
           }
           
-        ;
-        pop()
-    }
+        
+        }
