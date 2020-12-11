@@ -4,6 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world;
+var score=0
 function setup() {
   createCanvas(800,700);
   stroke("brown")
@@ -29,6 +30,12 @@ Engine.run(engine)
 function draw() {
  
   background(0);  
+  Engine.update(engine);
+  
+  console.log(score)
+  textSize(35)
+  fill("white")
+  text("score:"+ score,650,50)
   ground1.display()
   ground2.display()
   box1.display()
@@ -40,6 +47,16 @@ function draw() {
   box7.display()
   box8.display()
   box9.display()
+  box1.score()
+  box2.score()
+  box3.score()
+  box4.score()
+  box5.score()
+  box6.score()
+  box7.score()
+  box8.score()
+  box9.score()
+
   polygon1.display()
 chain1.display()
  
